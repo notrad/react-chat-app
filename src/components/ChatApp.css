@@ -1,0 +1,57 @@
+/* ChatApp.css */
+.chat-app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.chat-list {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.chat-conversation {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-conversation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .chat-app {
+    display: block;
+    /* flex-direction: column; */
+  }
+
+  .chat-list {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    height: 100%;
+  }
+
+  .chat-conversation {
+    width: 100%;
+  }
+
+  .no-conversation {
+    font-size: 18px;
+    margin-top: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .no-conversation button {
+    border : none;
+    padding: 0.5rem;
+  }
+}
